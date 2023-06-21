@@ -80,6 +80,54 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+        cansel: cansel {
+            compatible = "zmk,behavior-macro";
+            label = "CANSEL";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp Z>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            label = "CUT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            label = "COPY";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            label = "PASTE";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
     };
 
     keymap {
@@ -97,21 +145,21 @@
 
         lower_layer {
             bindings = <
-                    &trans    &trans  &trans     &trans   &ampers  &less_then    &more_then    &pipin   &kp BSLH    &trans    &trans           &trans
-&lt 4 AMPS       &kp UNDER    &kp F1  &kp F2     &kp F3    &kp F4      &kp F5        &kp F6    &kp F7     &kp F8    &kp F9   &kp F10          &kp F11  &lt 4 F12
-            &mt LCTRL PLUS  &kp EXCL  &kp AT   &kp HASH  &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-            &mt LALT EQUAL    &kp N1  &kp N2     &kp N3    &kp N4      &kp N5        &kp N6    &kp N7     &kp N8    &kp N9    &kp N0           &trans
-                                      &trans  &lt 3 TAB    &trans      &trans        &trans    &trans  &lt 3 DEL    &trans
+               &kp F1    &kp F2  &kp F3     &kp F4    &kp F5      &kp F6        &kp F7    &kp F8     &kp F9   &kp F10   &kp F11              &kp F12
+&mo 4       &kp UNDER     &none   &none      &none   &ampers  &less_then    &more_then    &pipin      &none     &none     &none                &none  &mo 4
+       &mt LCTRL PLUS  &kp EXCL  &kp AT   &kp HASH  &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS   &kp STAR  &kp LPAR  &kp RPAR      &mt RCTRL MINUS
+       &mt LALT EQUAL    &kp N1  &kp N2     &kp N3    &kp N4      &kp N5        &kp N6    &kp N7     &kp N8    &kp N9    &kp N0  &mt RIGHT_ALT EQUAL
+                                 &trans  &lt 3 TAB    &trans      &trans        &trans    &trans  &lt 3 DEL    &trans
             >;
         };
 
         raise_layer {
             bindings = <
-                       &trans           &trans     &trans     &trans     &trans        &trans          &trans    &trans     &trans     &trans           &trans           &trans
-&lt 4 K_CALC       &kp KP_NUM     &kp KP_SLASH  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP         &kp SLCK         &kp CAPS  &lt 4 K_CALC
-              &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS      &kp C_MUTE  &kp LEFT     &kp UP  &kp RIGHT          &kp INS  &mt RCTRL K_APP
-                       &trans        &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3    &kp KP_DOT    &kp C_VOL_DN   &kp END   &kp DOWN  &kp PG_DN  &kp PAUSE_BREAK           &trans
-                                                   &trans     &trans     &trans     &lt 3 RET       &lt 3 ESC    &trans     &trans     &trans
+                &kp F1           &kp F2     &kp F3     &kp F4     &kp F5        &kp F6          &kp F7    &kp F8     &kp F9    &kp F10          &kp F11          &kp F12
+&mo 4       &kp KP_NUM     &kp KP_SLASH  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP         &kp SLCK         &kp CAPS  &mo 4
+       &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS      &kp C_MUTE  &kp LEFT     &kp UP  &kp RIGHT          &kp INS  &mt RCTRL K_APP
+                &trans        &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3    &kp KP_DOT    &kp C_VOL_DN   &kp END   &kp DOWN  &kp PG_DN  &kp PAUSE_BREAK           &trans
+                                            &trans     &trans     &trans     &lt 3 RET       &lt 3 ESC    &trans     &trans     &trans
             >;
         };
 
@@ -127,10 +175,10 @@
 
         layer_4 {
             bindings = <
-         &to 0   &to 1   &to 2   &to 3   &to 4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+         &to 0   &to 1   &to 2   &to 3   &to 4  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&mo 4   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans  &mo 4
+       &cansel    &cut   &copy  &paste  &trans  &trans    &trans  &trans  &paste   &copy    &cut  &cansel
+        &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
