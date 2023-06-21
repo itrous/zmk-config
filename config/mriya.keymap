@@ -58,9 +58,6 @@
                 <&kp KP_N0 &kp KP_N6 &kp KP_N0>,
                 <&macro_release>,
                 <&kp LALT>;
-
-            wait-ms = <200>;
-            tap-ms = <200>;
         };
         more_then: more_then {
             compatible = "zmk,behavior-macro";
@@ -73,9 +70,6 @@
                 <&kp KP_N0 &kp KP_N6 &kp KP_N2>,
                 <&macro_release>,
                 <&kp LALT>;
-
-            wait-ms = <200>;
-            tap-ms = <200>;
         };
         pipin: pipin {
             compatible = "zmk,behavior-macro";
@@ -88,9 +82,6 @@
                 <&kp KP_N1 &kp KP_N2 &kp KP_N4>,
                 <&macro_release>,
                 <&kp LALT>;
-
-            wait-ms = <200>;
-            tap-ms = <200>;
         };
         cansel: cansel {
             compatible = "zmk,behavior-macro";
@@ -103,9 +94,6 @@
                 <&kp Z>,
                 <&macro_release>,
                 <&kp LCTRL>;
-
-            wait-ms = <200>;
-            tap-ms = <200>;
         };
         cut: cut {
             compatible = "zmk,behavior-macro";
@@ -118,9 +106,6 @@
                 <&kp X>,
                 <&macro_release>,
                 <&kp LCTRL>;
-
-            wait-ms = <200>;
-            tap-ms = <200>;
         };
         copy: copy {
             compatible = "zmk,behavior-macro";
@@ -133,9 +118,6 @@
                 <&kp C>,
                 <&macro_release>,
                 <&kp LCTRL>;
-
-            wait-ms = <200>;
-            tap-ms = <200>;
         };
         paste: paste {
             compatible = "zmk,behavior-macro";
@@ -148,9 +130,6 @@
                 <&kp V>,
                 <&macro_release>,
                 <&kp LCTRL>;
-
-            wait-ms = <200>;
-            tap-ms = <200>;
         };
     };
 
