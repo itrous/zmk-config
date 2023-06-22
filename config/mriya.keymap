@@ -39,14 +39,11 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_ALT>,
-                <&macro_wait_time 500>,
+                <&macro_wait_time 200>,
                 <&macro_tap>,
                 <&kp KP_N3 &kp KP_N8>,
                 <&macro_release>,
                 <&kp LALT>;
-
-            wait-ms = <200>;
-            tap-ms = <200>;
         };
         less_then: less_then {
             compatible = "zmk,behavior-macro";
@@ -55,6 +52,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LEFT_ALT>,
+                <&macro_wait_time 200>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N6 &kp KP_N0>,
                 <&macro_release>,
@@ -67,6 +65,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LALT>,
+                <&macro_wait_time 200>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N6 &kp KP_N2>,
                 <&macro_release>,
@@ -79,6 +78,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LALT>,
+                <&macro_wait_time 200>,
                 <&macro_tap>,
                 <&kp KP_N1 &kp KP_N2 &kp KP_N4>,
                 <&macro_release>,
@@ -91,6 +91,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
+                <&macro_wait_time 200>,
                 <&macro_tap>,
                 <&kp Z>,
                 <&macro_release>,
@@ -103,6 +104,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
+                <&macro_wait_time 200>,
                 <&macro_tap>,
                 <&kp X>,
                 <&macro_release>,
@@ -115,6 +117,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
+                <&macro_wait_time 200>,
                 <&macro_tap>,
                 <&kp C>,
                 <&macro_release>,
@@ -127,6 +130,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
+                <&macro_wait_time 200>,
                 <&macro_tap>,
                 <&kp V>,
                 <&macro_release>,
