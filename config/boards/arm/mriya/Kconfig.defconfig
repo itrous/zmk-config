@@ -43,7 +43,7 @@ config ZMK_IDLE_TIMEOUT
     default 3600000
 	
 config ZMK_IDLE_SLEEP_TIMEOUT
-    default 3600000
+    default 7200000
 	
 if USB
 
