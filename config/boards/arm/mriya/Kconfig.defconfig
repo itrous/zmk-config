@@ -39,6 +39,12 @@ config ZMK_USB
 config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 
+config ZMK_IDLE_TIMEOUT
+    default 3600000
+	
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 3600000
+	
 if USB
 
 config USB_NRFX
