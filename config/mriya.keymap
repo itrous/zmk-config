@@ -135,6 +135,32 @@
                 <&kp V>,
                 <&macro_release>,
                 <&kp LCTRL>;
+		cp_txt: cp_txt {
+			compatible = "zmk,behavior-macro";
+            label = "cp_txt";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL>,
+                <&macro_wait_time 250>,
+                <&macro_tap>,
+                <&kp INS>,
+                <&macro_release>,
+                <&kp RLCTRL>;		
+        };
+		paste_txt: paste_txt {
+			compatible = "zmk,behavior-macro";
+            label = "paste_txt";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RSHFT>,
+                <&macro_wait_time 250>,
+                <&macro_tap>,
+                <&kp INS>,
+                <&macro_release>,
+                <&kp RSHFT>;		
+        };
         };
     };
 
