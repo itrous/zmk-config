@@ -147,7 +147,7 @@
                     <&macro_tap>,
                     <&kp INS>,
                     <&macro_release>,
-                    <&kp RLCTRL>;
+                    <&kp RCTRL>;
             };
             paste_txt: paste_txt {
                 compatible = "zmk,behavior-macro";
