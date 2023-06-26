@@ -143,7 +143,7 @@
                 bindings =
                     <&macro_press>,
                     <&kp RCTRL>,
-                    <&macro_wait_time 250>,
+                    <&macro_wait_time 400>,
                     <&macro_tap>,
                     <&kp INS>,
                     <&macro_release>,
@@ -156,7 +156,7 @@
                 bindings =
                     <&macro_press>,
                     <&kp RSHFT>,
-                    <&macro_wait_time 250>,
+                    <&macro_wait_time 400>,
                     <&macro_tap>,
                     <&kp INS>,
                     <&macro_release>,
