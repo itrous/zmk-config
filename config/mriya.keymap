@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-macro";
             label = "AMPERS";
             #binding-cells = <0>;
-            wait-ms = <400>;
+            wait-ms = <150>;
             tap-ms = <120>;
             bindings =
                 <&macro_press>,
@@ -50,7 +50,7 @@
             compatible = "zmk,behavior-macro";
             label = "LESS_THEN";
             #binding-cells = <0>;
-            wait-ms = <200>;
+            wait-ms = <150>;
             tap-ms = <120>;
             bindings =
                 <&macro_press>,
@@ -64,7 +64,7 @@
             compatible = "zmk,behavior-macro";
             label = "MORE_THEN";
             #binding-cells = <0>;
-            wait-ms = <200>;
+            wait-ms = <150>;
             tap-ms = <120>;
             bindings =
                 <&macro_press>,
@@ -78,7 +78,7 @@
             compatible = "zmk,behavior-macro";
             label = "PIPIN";
             #binding-cells = <0>;
-            wait-ms = <200>;
+            wait-ms = <150>;
             tap-ms = <120>;
             bindings =
                 <&macro_press>,
@@ -92,7 +92,7 @@
             compatible = "zmk,behavior-macro";
             label = "CANSEL";
             #binding-cells = <0>;
-            wait-ms = <200>;
+            wait-ms = <150>;
             tap-ms = <120>;
             bindings =
                 <&macro_press>,
@@ -106,7 +106,7 @@
             compatible = "zmk,behavior-macro";
             label = "CUT";
             #binding-cells = <0>;
-            wait-ms = <200>;
+            wait-ms = <150>;
             tap-ms = <120>;
             bindings =
                 <&macro_press>,
@@ -120,7 +120,7 @@
             compatible = "zmk,behavior-macro";
             label = "COPY";
             #binding-cells = <0>;
-            wait-ms = <200>;
+            wait-ms = <150>;
             tap-ms = <120>;
             bindings =
                 <&macro_press>,
@@ -134,7 +134,7 @@
             compatible = "zmk,behavior-macro";
             label = "PASTE";
             #binding-cells = <0>;
-            wait-ms = <200>;
+            wait-ms = <150>;
             tap-ms = <120>;
             bindings =
                 <&macro_press>,
@@ -148,7 +148,7 @@
                 compatible = "zmk,behavior-macro";
                 label = "cp_txt";
                 #binding-cells = <0>;
-                wait-ms = <200>;
+                wait-ms = <150>;
                 tap-ms = <120>;
                 bindings =
                     <&macro_press>,
@@ -162,7 +162,7 @@
                 compatible = "zmk,behavior-macro";
                 label = "paste_txt";
                 #binding-cells = <0>;
-                wait-ms = <200>;
+                wait-ms = <150>;
                 tap-ms = <120>;
                 bindings =
                     <&macro_press>,
