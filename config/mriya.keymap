@@ -88,21 +88,62 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
-        at: at {
+        cansel: cansel {
             compatible = "zmk,behavior-macro";
-            label = "PIPIN";
+            label = "CANSEL";
             #binding-cells = <0>;
             wait-ms = <105>;
             tap-ms = <105>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp KP_N6 &kp KP_N4>,
+                <&kp Z>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp LCTRL>;
         };
-        cut_txt: cut_txt {
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            label = "CUT";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            label = "COPY";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCTRL>;
+        };
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            label = "PASTE";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LCTRL>;
+            cut_txt: cut_txt {
                 compatible = "zmk,behavior-macro";
                 label = "cut_txt";
                 #binding-cells = <0>;
@@ -162,7 +203,7 @@
 
         lower_layer {
             bindings = <
-             &kp EXCL       &at  &kp F3     &kp F4    &kp F5      &kp F6        &kp F7    &kp F8         &kp F9   &kp F10   &kp F11  &kp F12
+               &kp F1    &kp F2  &kp F3     &kp F4    &kp F5      &kp F6        &kp F7    &kp F8         &kp F9   &kp F10   &kp F11  &kp F12
 &mo 4       &kp UNDER     &none   &none      &none   &ampers  &less_then    &more_then    &pipin  &kp BACKSLASH     &none     &none  &none  &mo 4
                &trans  &kp EXCL  &kp AT   &kp HASH  &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS       &kp STAR  &kp LPAR  &kp RPAR  &trans
                &trans    &kp N1  &kp N2     &kp N3    &kp N4      &kp N5        &kp N6    &kp N7         &kp N8    &kp N9    &kp N0  &trans
