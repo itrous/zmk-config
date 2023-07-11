@@ -89,48 +89,47 @@
                 <&kp LALT>;
         };
         cut_txt: cut_txt {
-                compatible = "zmk,behavior-macro";
-                label = "cut_txt";
-                #binding-cells = <0>;
-                wait-ms = <105>;
-                tap-ms = <105>;
-                bindings =
-                    <&macro_press>,
-                    <&kp RSHFT>,
-                    <&macro_tap>,
-                    <&kp DEL>,
-                    <&macro_release>,
-                    <&kp RSHFT>;
-            };
-            cp_txt: cp_txt {
-                compatible = "zmk,behavior-macro";
-                label = "cp_txt";
-                #binding-cells = <0>;
-                wait-ms = <105>;
-                tap-ms = <105>;
-                bindings =
-                    <&macro_press>,
-                    <&kp RCTRL>,
-                    <&macro_tap>,
-                    <&kp INS>,
-                    <&macro_release>,
-                    <&kp RCTRL>;
-            };
-            paste_txt: paste_txt {
-                compatible = "zmk,behavior-macro";
-                label = "paste_txt";
-                #binding-cells = <0>;
-                wait-ms = <105>;
-                tap-ms = <105>;
-                bindings =
-                    <&macro_press>,
-                    <&kp RSHFT>,
-                    <&macro_tap>,
-                    <&kp INS>,
-                    <&macro_release>,
-                    <&kp RSHFT>;
-            };
-        
+            compatible = "zmk,behavior-macro";
+            label = "cut_txt";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp RSHFT>,
+                <&macro_tap>,
+                <&kp DEL>,
+                <&macro_release>,
+                <&kp RSHFT>;
+        };
+        cp_txt: cp_txt {
+            compatible = "zmk,behavior-macro";
+            label = "cp_txt";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL>,
+                <&macro_tap>,
+                <&kp INS>,
+                <&macro_release>,
+                <&kp RCTRL>;
+        };
+        paste_txt: paste_txt {
+            compatible = "zmk,behavior-macro";
+            label = "paste_txt";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp RSHFT>,
+                <&macro_tap>,
+                <&kp INS>,
+                <&macro_release>,
+                <&kp RSHFT>;
+        };
     };
 
     keymap {
@@ -148,21 +147,21 @@
 
         lower_layer {
             bindings = <
-               &kp F1    &kp F2  &kp F3     &kp F4    &kp F5      &kp F6        &kp F7    &kp F8         &kp F9   &kp F10   &kp F11  &kp F12
-&mo 4       &kp UNDER     &none   &none      &none   &ampers  &less_then    &more_then    &pipin  &kp BACKSLASH     &none     &none  &none  &mo 4
-               &trans  &kp EXCL  &kp AT   &kp HASH  &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS       &kp STAR  &kp LPAR  &kp RPAR  &trans
-               &trans    &kp N1  &kp N2     &kp N3    &kp N4      &kp N5        &kp N6    &kp N7         &kp N8    &kp N9    &kp N0  &trans
-                                 &trans  &lt 3 TAB    &trans      &trans        &trans    &trans      &lt 3 DEL    &trans
+          &kp F1    &kp F2  &kp F3     &kp F4    &kp F5      &kp F6       &ampers    &kp F8         &kp F9   &kp F10   &kp F11  &kp F12
+&mo 4  &kp UNDER     &none   &none      &none   &ampers  &less_then    &more_then    &pipin  &kp BACKSLASH     &none     &none    &none  &mo 4
+          &trans  &kp EXCL  &kp AT   &kp HASH  &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS       &kp STAR  &kp LPAR  &kp RPAR   &trans
+          &trans    &kp N1  &kp N2     &kp N3    &kp N4      &kp N5        &kp N6    &kp N7         &kp N8    &kp N9    &kp N0   &trans
+                            &trans  &lt 3 TAB    &trans      &trans        &trans    &trans      &lt 3 DEL    &trans
             >;
         };
 
         raise_layer {
             bindings = <
-                &kp F1           &kp F2     &kp F3     &kp F4     &kp F5        &kp F6          &kp F7    &kp F8     &kp F9    &kp F10          &kp F11          &kp F12
-&mo 4       &kp KP_NUM     &kp KP_SLASH  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP         &kp SLCK         &kp CAPS  &mo 4
-                &trans  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS      &kp C_MUTE  &kp LEFT     &kp UP  &kp RIGHT          &kp INS  &mt RCTRL K_APP
-                &trans        &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3    &kp KP_DOT    &kp C_VOL_DN   &kp END   &kp DOWN  &kp PG_DN  &kp PAUSE_BREAK           &trans
-                                            &trans     &trans     &trans     &lt 3 RET       &lt 3 ESC    &trans     &trans     &trans
+           &kp F1           &kp F2     &kp F3     &kp F4     &kp F5        &kp F6          &kp F7    &kp F8     &kp F9    &kp F10          &kp F11          &kp F12
+&mo 4  &kp KP_NUM     &kp KP_SLASH  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP         &kp SLCK         &kp CAPS  &mo 4
+           &trans  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS      &kp C_MUTE  &kp LEFT     &kp UP  &kp RIGHT          &kp INS  &mt RCTRL K_APP
+           &trans        &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3    &kp KP_DOT    &kp C_VOL_DN   &kp END   &kp DOWN  &kp PG_DN  &kp PAUSE_BREAK           &trans
+                                       &trans     &trans     &trans     &lt 3 RET       &lt 3 ESC    &trans     &trans     &trans
             >;
         };
 
@@ -178,11 +177,11 @@
 
         layer_4 {
             bindings = <
-        &to 0    &to 1     &to 2      &to 3       &to 4  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-&mo 4  &trans   &trans    &trans     &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans  &mo 4
-       &trans   &trans    &trans     &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-       &trans   &trans  &cut_txt    &cp_txt  &paste_txt  &trans    &trans  &trans  &trans  &trans  &trans   &trans
-                          &trans     &trans      &trans  &trans    &trans  &trans  &trans  &trans
+        &to 0   &to 1     &to 2    &to 3       &to 4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mo 4  &trans  &trans    &trans   &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &mo 4
+       &trans  &trans    &trans   &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+       &trans  &trans  &cut_txt  &cp_txt  &paste_txt  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans   &trans      &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
