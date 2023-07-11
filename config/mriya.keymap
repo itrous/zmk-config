@@ -206,7 +206,7 @@
         &kp EXCL       &at   &hash      &doll &kp PRCNT      &caret       &ampers  &kp STAR       &kp LPAR  &kp RPAR   &kp MINUS  &kp EQUAL
 &mo 4     &trans    &trans  &trans     &trans    &trans  &less_then    &more_then    &pipin         &trans    &trans      &trans     &trans  &mo 4
           &trans    &trans  &trans     &trans    &trans      &trans        &trans    &trans         &trans    &trans      &trans     &trans
-          &trans    &kp N1  &kp N2     &kp N3    &kp N4      &kp N5        &kp N6    &kp N7         &kp N8    &kp N9      &kp N0     &trans
+          &trans    &trans  &trans     &trans    &trans      &trans        &trans    &trans         &trans    &trans      &trans     &trans
                             &trans  &lt 3 TAB    &trans      &trans        &trans    &trans      &lt 3 DEL    &trans
             >;
         };
