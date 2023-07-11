@@ -102,6 +102,34 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
+        hash: hash {
+            compatible = "zmk,behavior-macro";
+            label = "hash";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N3 &kp KP_N5>,
+                <&macro_release>,
+                <&kp LALT>;
+        };
+        doll: doll {
+            compatible = "zmk,behavior-macro";
+            label = "doll";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N3 &kp KP_N6>,
+                <&macro_release>,
+                <&kp LALT>;
+        };
         cut_txt: cut_txt {
             compatible = "zmk,behavior-macro";
             label = "cut_txt";
@@ -161,7 +189,7 @@
 
         lower_layer {
             bindings = <
-        &kp EXCL       &at  &kp F3     &kp F4    &kp F5      &kp F6       &ampers    &kp F8         &kp F9   &kp F10   &kp F11  &kp F12
+        &kp EXCL       &at   &hash      &doll    &kp F5      &kp F6       &ampers    &kp F8         &kp F9   &kp F10   &kp F11  &kp F12
 &mo 4     &trans    &trans  &trans     &trans    &trans  &less_then    &more_then    &pipin         &trans    &trans    &trans   &trans  &mo 4
           &trans    &trans  &kp AT   &kp HASH  &kp DLLR   &kp PRCNT     &kp CARET  &kp AMPS       &kp STAR  &kp LPAR  &kp RPAR   &trans
           &trans    &kp N1  &kp N2     &kp N3    &kp N4      &kp N5        &kp N6    &kp N7         &kp N8    &kp N9    &kp N0   &trans
