@@ -143,6 +143,7 @@
                 <&kp V>,
                 <&macro_release>,
                 <&kp LCTRL>;
+            };
             cut_txt: cut_txt {
                 compatible = "zmk,behavior-macro";
                 label = "cut_txt";
@@ -185,7 +186,7 @@
                     <&macro_release>,
                     <&kp RSHFT>;
             };
-        };
+        
     };
 
     keymap {
