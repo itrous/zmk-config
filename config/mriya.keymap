@@ -88,63 +88,7 @@
                 <&macro_release>,
                 <&kp LALT>;
         };
-        cansel: cansel {
-            compatible = "zmk,behavior-macro";
-            label = "CANSEL";
-            #binding-cells = <0>;
-            wait-ms = <105>;
-            tap-ms = <105>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp Z>,
-                <&macro_release>,
-                <&kp LCTRL>;
-        };
-        cut: cut {
-            compatible = "zmk,behavior-macro";
-            label = "CUT";
-            #binding-cells = <0>;
-            wait-ms = <105>;
-            tap-ms = <105>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp X>,
-                <&macro_release>,
-                <&kp LCTRL>;
-        };
-        copy: copy {
-            compatible = "zmk,behavior-macro";
-            label = "COPY";
-            #binding-cells = <0>;
-            wait-ms = <105>;
-            tap-ms = <105>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp C>,
-                <&macro_release>,
-                <&kp LCTRL>;
-        };
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            label = "PASTE";
-            #binding-cells = <0>;
-            wait-ms = <105>;
-            tap-ms = <105>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_tap>,
-                <&kp V>,
-                <&macro_release>,
-                <&kp LCTRL>;
-            };
-            cut_txt: cut_txt {
+        cut_txt: cut_txt {
                 compatible = "zmk,behavior-macro";
                 label = "cut_txt";
                 #binding-cells = <0>;
