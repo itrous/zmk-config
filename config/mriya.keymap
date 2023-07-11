@@ -90,7 +90,7 @@
         };
         at: at {
             compatible = "zmk,behavior-macro";
-            label = "AT";
+            label = "PIPIN";
             #binding-cells = <0>;
             wait-ms = <105>;
             tap-ms = <105>;
@@ -99,20 +99,6 @@
                 <&kp LALT>,
                 <&macro_tap>,
                 <&kp KP_N6 &kp KP_N4>,
-                <&macro_release>,
-                <&kp LALT>;
-        };
-        hash: hash {
-            compatible = "zmk,behavior-macro";
-            label = "HASH";
-            #binding-cells = <0>;
-            wait-ms = <105>;
-            tap-ms = <105>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_N3 &kp KP_N5>,
                 <&macro_release>,
                 <&kp LALT>;
         };
