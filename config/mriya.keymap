@@ -14,11 +14,11 @@
 #define ADJ 3
 
 &lt {
-    quick_tap_ms = <100>;
+    quick_tap_ms = <150>;
 };
 
 &mt {
-    quick_tap_ms = <100>;
+    quick_tap_ms = <150>;
 };
 
 / {
@@ -186,6 +186,30 @@
                 <&macro_release>,
                 <&kp RSHFT>;
         };
+        old_pawd: old_pawd {
+                compatible = "zmk,behavior-macro";
+                label = "old_pawd";
+                #binding-cells = <0>;
+                wait-ms = <105>;
+                tap-ms = <105>;
+                bindings =
+                    <&macro_press>,
+                    <&kp LSHFT>,
+                    <&macro_release>,
+                    <&kp LSHFT>;
+        };
+        new_pawd: new_pawd {
+                compatible = "zmk,behavior-macro";
+                label = "new_pawd";
+                #binding-cells = <0>;
+                wait-ms = <105>;
+                tap-ms = <105>;
+                bindings =
+                    <&macro_press>,
+                    <&kp LSHFT>,
+                    <&macro_release>,
+                    <&kp LSHFT>;
+        };
     };
 
     keymap {
@@ -203,11 +227,11 @@
 
         lower_layer {
             bindings = <
-        &kp EXCL       &at   &hash      &doll &kp PRCNT      &caret       &ampers  &kp STAR       &kp LPAR  &kp RPAR   &kp MINUS  &kp EQUAL
-&mo 4     &trans    &trans  &trans     &trans    &trans  &less_then    &more_then    &pipin         &trans    &trans      &trans     &trans  &mo 4
-          &trans    &trans  &trans     &trans    &trans      &trans        &trans    &trans         &trans    &trans      &trans     &trans
-          &trans    &trans  &trans     &trans    &trans      &trans        &trans    &trans         &trans    &trans      &trans     &trans
-                            &trans  &lt 3 TAB    &trans      &trans        &trans    &trans      &lt 3 DEL    &trans
+        &kp EXCL       &at   &hash      &doll  &kp PRCNT      &caret       &ampers  &kp STAR       &kp LPAR  &kp RPAR   &kp MINUS  &kp EQUAL
+&mo 4     &trans    &trans  &trans     &trans     &trans  &less_then    &more_then    &pipin         &trans    &trans      &trans     &trans  &mo 4
+          &trans    &trans  &trans     &trans     &trans      &trans        &trans    &trans         &trans    &trans      &trans     &trans
+          &trans    &trans  &trans     &trans  &old_pawd   &new_pawd        &trans    &trans         &trans    &trans      &trans     &trans
+                            &trans  &lt 3 TAB     &trans      &trans        &trans    &trans      &lt 3 DEL    &trans
             >;
         };
 
