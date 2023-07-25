@@ -186,6 +186,20 @@
                 <&macro_release>,
                 <&kp RSHFT>;
         };
+        ch_lng: ch_lng {
+            compatible = "zmk,behavior-macro";
+            label = "ch_lng";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp RSHFT>,
+                <&macro_release>,
+                <&kp LALT>;
+        };
         old_pawd: old_pawd {
                 compatible = "zmk,behavior-macro";
                 label = "old_pawd";
