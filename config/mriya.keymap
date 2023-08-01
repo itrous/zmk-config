@@ -26,8 +26,13 @@
         compatible = "zmk,combos";
 
         new_combo {
-            bindings = <&ch_lng>;
+            bindings = <&kp RA(RIGHT_SHIFT)>;
             key-positions = <52 43>;
+        };
+
+        vi_quit {
+            bindings = <&trans>;
+            key-positions = <14 15>;
         };
     };
 
