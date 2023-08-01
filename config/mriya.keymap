@@ -37,21 +37,22 @@
 
         f12_combo_l {
             bindings = <&kp F12>;
-            key-positions = <4 5>;
+            key-positions = <0 1>;
         };
 
         ctrl_-_l {
             bindings = <&go_back_1c>;
-            key-positions = <17 18>;
+            key-positions = <13 14>;
         };
+
         f12_combo_r {
             bindings = <&kp F12>;
-            key-positions = <4 3>;
+            key-positions = <10 11>;
         };
 
         ctrl_-_r {
             bindings = <&go_back_1c>;
-            key-positions = <17 16>;
+            key-positions = <23 24>;
         };
     };
 
