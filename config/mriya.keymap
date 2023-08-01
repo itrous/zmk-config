@@ -41,7 +41,7 @@
         };
 
         ctrl_- {
-            bindings = <&kp RC(MINUS)>;
+            bindings = <&go_back_1c>;
             key-positions = <17 18>;
         };
     };
@@ -254,6 +254,20 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp W &kp Q &kp RET>;
+        };
+        go_back_1c: go_back_1c {
+            compatible = "zmk,behavior-macro";
+            label = "go_back_1c";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL>,
+                <&macro_tap>,
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp RCTRL>;
         };
     };
 
