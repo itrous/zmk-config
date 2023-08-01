@@ -34,6 +34,16 @@
             bindings = <&vi_quit>;
             key-positions = <14 15>;
         };
+
+        f12_combo {
+            bindings = <&kp F12>;
+            key-positions = <4 5>;
+        };
+
+        ctrl_- {
+            bindings = <&kp RC(MINUS)>;
+            key-positions = <17 18>;
+        };
     };
 
     macros {
