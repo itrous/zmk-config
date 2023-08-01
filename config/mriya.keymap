@@ -26,7 +26,7 @@
         compatible = "zmk,combos";
 
         new_combo {
-            bindings = <&kp RA(RIGHT_SHIFT)>;
+            bindings = <&ch_lng>;
             key-positions = <52 43>;
         };
 
@@ -234,7 +234,7 @@
             label = "vi_quit";
             #binding-cells = <0>;
             wait-ms = <105>;
-            tap-ms = <105>;
+            tap-ms = <130>;
             bindings =
                 <&macro_press>,
                 <&kp LSHFT>,
