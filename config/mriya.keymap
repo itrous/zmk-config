@@ -31,7 +31,7 @@
         };
 
         vi_quit {
-            bindings = <&trans>;
+            bindings = <&vi_quit>;
             key-positions = <14 15>;
         };
     };
