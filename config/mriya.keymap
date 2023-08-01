@@ -241,9 +241,9 @@
                 <&macro_tap>,
                 <&kp SEMI>,
                 <&macro_release>,
-                <&kp LSHFT>;
+                <&kp LSHFT>,
                 <&macro_tap>,
-                <&kp W &kp Q &kp RET>,
+                <&kp W &kp Q &kp RET>;
         };
     };
 
