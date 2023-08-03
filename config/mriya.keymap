@@ -54,6 +54,11 @@
             bindings = <&go_back_1c>;
             key-positions = <23 24>;
         };
+
+        ctrl_t_l {
+            bindings = <&kp RC(T)>;
+            key-positions = <13 14 15>;
+        };
     };
 
     macros {
