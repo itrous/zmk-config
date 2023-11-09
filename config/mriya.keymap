@@ -57,7 +57,7 @@
 
         ctrl_t_l {
             bindings = <&find_modul_1c>;
-            key-positions = <13 14 15>;
+            key-positions = <17 18>;
         };
 
         backspase {
@@ -68,6 +68,16 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <56 57>;
+        };
+
+        list_bookmark {
+            bindings = <&cp_txt>;
+            key-positions = <0 1 2>;
+        };
+
+        list_breakpoint {
+            bindings = <&ampers>;
+            key-positions = <9 8 10>;
         };
     };
 
