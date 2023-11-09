@@ -59,6 +59,16 @@
             bindings = <&find_modul_1c>;
             key-positions = <13 14 15>;
         };
+
+        backspase {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <55 54>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <56 57>;
+        };
     };
 
     macros {
@@ -248,10 +258,7 @@
             #binding-cells = <0>;
             wait-ms = <105>;
             tap-ms = <105>;
-            bindings =
-                <&macro_press>,
-                <&macro_release>,
-                <&kp LSHFT>;
+            bindings = <&macro_press>, <&macro_release>, <&kp LSHFT>;
         };
         vi_quit: vi_quit {
             compatible = "zmk,behavior-macro";
@@ -304,51 +311,51 @@
 
         default_layer {
             bindings = <
-       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0  &kp MINUS       &kp EQUAL
-&mo 4     &kp GRAVE         &kp Q         &kp W         &kp E            &kp R         &kp T           &kp Y           &kp U         &kp I          &kp O      &kp P        &kp LBKT  &lt 4 RBKT
-       &mt LWIN TAB         &kp A         &kp S         &kp D            &kp F         &kp G           &kp H           &kp J         &kp K          &kp L   &kp SEMI    &mt RWIN SQT
-          &kp LCTRL         &kp Z         &kp X         &kp C            &kp V         &kp B           &kp N           &kp M     &kp COMMA        &kp DOT   &kp FSLH  &mt RCTRL BSLH
-                                       &kp LALT         &mo 2  &mt LSHFT SPACE     &lt 1 RET       &lt 1 ESC  &mt RSHFT BSPC     &lt 2 DEL  &kp RIGHT_ALT
+       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9  &kp NUMBER_0   &kp MINUS  &kp EQUAL
+&mo 4  &kp GRAVE     &kp Q         &kp W         &kp E         &kp R            &kp T           &kp Y         &kp U           &kp I         &kp O          &kp P      &kp LBKT        &lt 4 RBKT
+       &mt LWIN TAB  &kp A         &kp S         &kp D         &kp F            &kp G           &kp H         &kp J           &kp K         &kp L          &kp SEMI   &mt RWIN SQT
+       &kp LCTRL     &kp Z         &kp X         &kp C         &kp V            &kp B           &kp N         &kp M           &kp COMMA     &kp DOT        &kp FSLH   &mt RCTRL BSLH
+                                   &kp LALT      &mo 2         &mt LSHFT SPACE  &lt 1 RET       &lt 1 ESC     &mt RSHFT BSPC  &lt 2 DEL     &kp RIGHT_ALT
             >;
         };
 
         lower_layer {
             bindings = <
-       &kp EXCL     &at   &hash      &doll  &kp PRCNT      &caret       &ampers  &kp STAR   &kp LPAR  &kp RPAR  &kp MINUS  &kp EQUAL
-&mo 4    &trans  &trans  &trans     &trans     &trans  &less_then    &more_then    &pipin     &trans    &trans     &trans     &trans  &mo 4
-         &trans  &trans  &trans     &trans     &trans      &trans        &trans    &trans     &trans    &trans     &trans     &trans
-         &trans  &trans  &trans     &trans  &old_pawd   &new_pawd        &trans    &trans     &trans    &trans     &trans     &trans
-                         &trans  &lt 3 TAB     &trans      &trans        &trans    &trans  &lt 3 DEL    &trans
+       &kp EXCL  &at     &hash   &doll      &kp PRCNT  &caret        &ampers     &kp STAR  &kp LPAR   &kp RPAR  &kp MINUS  &kp EQUAL
+&mo 4  &trans    &trans  &trans  &trans     &trans     &less_then    &more_then  &pipin    &trans     &trans    &trans     &trans     &mo 4
+       &trans    &trans  &trans  &trans     &trans     &trans        &trans      &trans    &trans     &trans    &trans     &trans
+       &trans    &trans  &trans  &trans     &old_pawd  &new_pawd     &trans      &trans    &trans     &trans    &trans     &trans
+                         &trans  &lt 3 TAB  &trans     &trans        &trans      &trans    &lt 3 DEL  &trans
             >;
         };
 
         raise_layer {
             bindings = <
-           &kp F1           &kp F2     &kp F3     &kp F4     &kp F5        &kp F6          &kp F7    &kp F8     &kp F9    &kp F10          &kp F11          &kp F12
-&mo 4  &kp KP_NUM     &kp KP_SLASH  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP         &kp SLCK         &kp CAPS  &mo 4
-           &trans  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS      &kp C_MUTE  &kp LEFT     &kp UP  &kp RIGHT          &kp INS  &mt RCTRL K_APP
-           &trans        &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3    &kp KP_DOT    &kp C_VOL_DN   &kp END   &kp DOWN  &kp PG_DN  &kp PAUSE_BREAK           &trans
-                                       &trans     &trans     &trans     &lt 3 RET       &lt 3 ESC    &trans     &trans     &trans
+       &kp F1      &kp F2           &kp F3     &kp F4     &kp F5     &kp F6          &kp F7        &kp F8    &kp F9     &kp F10    &kp F11          &kp F12
+&mo 4  &kp KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CAPS         &mo 4
+       &trans      &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
+       &trans      &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT      &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
+                                    &trans     &trans     &trans     &lt 3 RET       &lt 3 ESC     &trans    &trans     &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-             &none         &none         &none         &none         &none         &none           &none         &none         &none         &none         &none        &none
-&mo 4  &bootloader         &none         &none         &none         &none         &none           &none         &none         &none         &none         &none  &bootloader  &mo 4
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0   &bt BT_CLR
-        &sys_reset         &none         &none         &none         &none         &none           &none         &none         &none         &none         &none   &sys_reset
-                                         &none        &trans         &none        &trans          &trans         &none        &trans         &none
+       &none        &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+&mo 4  &bootloader  &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &bootloader  &mo 4
+       &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+       &sys_reset   &none         &none         &none         &none         &none           &none         &none         &none         &none         &none         &sys_reset
+                                  &none         &trans        &none         &trans          &trans        &none         &trans        &none
             >;
         };
 
         layer_4 {
             bindings = <
-        &to 0   &to 1     &to 2    &to 3       &to 4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&mo 4  &trans  &trans    &trans   &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &mo 4
-       &trans  &trans    &trans   &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+       &to 0   &to 1   &to 2     &to 3    &to 4       &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mo 4  &trans  &trans  &trans    &trans   &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &mo 4
+       &trans  &trans  &trans    &trans   &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans
        &trans  &trans  &cut_txt  &cp_txt  &paste_txt  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans   &trans      &trans  &trans    &trans  &trans  &trans  &trans
+                       &trans    &trans   &trans      &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
