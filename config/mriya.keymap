@@ -71,12 +71,12 @@
         };
 
         list_bookmark {
-            bindings = <&cp_txt>;
+            bindings = <&list_bookmark>;
             key-positions = <0 1 2>;
         };
 
         list_breakpoint {
-            bindings = <&ampers>;
+            bindings = <&list_breakpoint>;
             key-positions = <9 8 10>;
         };
     };
@@ -313,6 +313,34 @@
                 <&kp T>,
                 <&macro_release>,
                 <&kp RCTRL>;
+        };
+        list_bookmark: list_bookmark {
+            compatible = "zmk,behavior-macro";
+            label = "list_bookmark";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHFT>,
+                <&macro_tap>,
+                <&kp F2>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHFT>;
+        };
+        list_breakpoint: list_breakpoint {
+            compatible = "zmk,behavior-macro";
+            label = "list_breakpoint";
+            #binding-cells = <0>;
+            wait-ms = <105>;
+            tap-ms = <105>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHFT>,
+                <&macro_tap>,
+                <&kp F9>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHFT>;
         };
     };
 
