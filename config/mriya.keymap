@@ -14,11 +14,11 @@
 #define ADJ 3
 
 &lt {
-    quick_tap_ms = <130>;
+    quick_tap_ms = <105>;
 };
 
 &mt {
-    quick_tap_ms = <130>;
+    quick_tap_ms = <105>;
 };
 
 / {
@@ -275,7 +275,7 @@
             label = "vi_quit";
             #binding-cells = <0>;
             wait-ms = <105>;
-            tap-ms = <130>;
+            tap-ms = <105>;
             bindings =
                 <&macro_press>,
                 <&kp LSHFT>,
