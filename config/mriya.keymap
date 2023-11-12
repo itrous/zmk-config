@@ -62,12 +62,12 @@
 
         backspase {
             bindings = <&kp BACKSPACE>;
-            key-positions = <55 54>;
+            key-positions = <55 44>;
         };
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <56 57>;
+            key-positions = <56 45>;
         };
 
         list_bookmark {
