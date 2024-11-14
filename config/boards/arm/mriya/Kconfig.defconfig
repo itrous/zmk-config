@@ -30,21 +30,9 @@ config ZMK_SPLIT
 config BT_CTLR
 	default BT
 
-config ZMK_BLE
-	default y
-
-config ZMK_USB
-	default y
-
 config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 
-config ZMK_IDLE_TIMEOUT
-    default 7200000
-	
-config ZMK_IDLE_SLEEP_TIMEOUT
-    default 10400000
-	
 if USB
 
 config USB_NRFX
