@@ -76,6 +76,11 @@
             bindings = <&list_breakpoint>;
             key-positions = <9 8 10>;
         };
+
+        chlngmac {
+            bindings = <&chlngmac>;
+            key-positions = <42 51>;
+        };
     };
 
     macros {
